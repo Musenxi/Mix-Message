@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="message.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+ 
+    <button class="btn" id="btn1">弹窗消息提醒</button><br>
+    <button class="btn" id="btn2">弹窗消息提醒</button>
+
+
+
+</body>
+<script src="message.js"></script>
+<script>
+    // success
+    const success = new Message();
+    document.querySelector('#btn1').addEventListener('click', () => {
+        success.show({
+            type: 'success',
+            text: 'SUCCESS提示'
+        });
+    });
+
+    // warning可以定义为全局对象，项目中可以直接调用。
+    const warning = new Message();
+    document.querySelector('#btn2').addEventListener('click', () => {
+        warning.show({
+            type: 'warning',
+            text: '点我旁边的叉叉试试',
+            duration: 0,    // 不会自动消失，除非>0
+            closeable: true, // 可手动关闭，如果false则无
+        });
+    });
+</script>
+</html>
