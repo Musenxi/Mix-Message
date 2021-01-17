@@ -3,7 +3,7 @@
 	left: 50%;
 	top: 10%;
 	transform: translateX(-50%);
-	border: 1px solid #EBEEF5;
+	border: 1px solid #73575c;
 	min-width: 380px;
 	transition: top .3s ease-out;
 	opacity: .3s ease-out;
@@ -30,7 +30,7 @@
 	right: 15px;
 	transform: translateY(-50%);
 	cursor: pointer;
-	color: #C0C4CC;
+	color: #856d72;
 	font-size: 16px;
 	width: 26px;
 	height: 26px;
@@ -54,8 +54,8 @@
 }
 
 .mix-message-info {
-	border-color: #EBEEF5;
-	background-color: #edf2fc;
+	border-color: #73575c;
+	background-color: #b598a1;
 }
 
 .mix-message-info .mix-icon {
