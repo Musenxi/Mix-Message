@@ -63,7 +63,7 @@
 }
 
 .mix-message-info .mix-message__content {
-	color: #909399;
+	color: #4d4030;
 }
 
 .mix-icon-info:before {
@@ -78,7 +78,7 @@
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
-	background: #909399;
+	background: #4d4030;
 	left: -8px;
 	top: -3px;
 	border-radius: 50%;
